@@ -1,5 +1,5 @@
+
 *{
-    background-color: rgb(15, 15, 15);
     margin: 0;
 }
 
@@ -10,6 +10,7 @@ html {
     background-position: center center;
     background-attachment: fixed;
 }
+
 
 
 .navegacion{
@@ -30,26 +31,33 @@ nav ul {
     display: flex;
     list-style: none;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
 
 
 }
 
 nav a {
     display: flex;
-    background-color: rgba(22, 85, 90, 0.733);
+    background-color: rgba(22, 85, 90, 0);
     padding: 20px;
     text-align: center;
+    justify-self: center;
     color: rgb(104, 211, 214);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
-    position:relative;
+    transition:  background-color 0.5s ease;
 }
 
 nav a:hover{
     background-color: rgba(36, 134, 141, 0.596);
 }
 
-
+nav li {
+    margin: auto;
+    border:solid rgb(104, 210, 214) 1px -width;
+}
 
 h1 {
     color: rgb(104, 211, 214);
@@ -59,23 +67,20 @@ h1 {
 }
 
 
-nav li {
-    margin: auto;
-    border:solid rgb(104, 211, 214) 1px -width;
-}
-
-
 .formulario{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20%;
     background-color:rgba(22, 85, 90, 0.904);
+    border-radius:5%;
+    transition: border-radius 0.5s ease;
 
 }
 
 .formulario:hover{
-    background-color: rgba(36, 134, 141, 0.596);
+    border-radius:10%;
+
 }
 
 h1{
@@ -89,6 +94,7 @@ form{
     line-height: 2;
     justify-content: center;
     background-color: rgba(22, 85, 90, 0);
+    
 
 }
 

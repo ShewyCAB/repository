@@ -1,56 +1,101 @@
 *{
-    background-color: rgb(15, 15, 15);
+    margin: 0;
 }
 
-.titulo1 {
-    color: rgb(104, 211, 214);
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+html {
+    background-image: url("/repository/multimedia/FdM7TdWXEAAgl9g.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
-.subtitulo1 {
-    color: rgb(104, 211, 214);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 20px;
+
+.navegacion{
+    background-color: rgb(22, 85, 90);
+    
 }
 
-nav {
-    display: flexbox;
-
+body{
+    background-color: rgba(240, 248, 255, 0);
 }
 
-ul {
+nav ul {
+    margin: 0;
+    display: flex;
+    background-color: rgba(22, 85, 90, 0.733);
     width: auto;
     height: auto;
     display: flex;
     list-style: none;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+
 }
 
-li {
-    margin: auto;
-    border:solid rgb(104, 211, 214) 1px -width;
-}
-a {
+nav a {
+    display: flex;
+    background-color: rgba(22, 85, 90, 0);
+    padding: 20px;
+    text-align: center;
+    justify-self: center;
     color: rgb(104, 211, 214);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
-
+    transition:  background-color 0.5s ease;
+    
 }
 
-.cuerpo {
+nav a:hover{
+    background-color: rgba(36, 134, 141, 0.596);
+}
+
+nav li {
+    margin: auto;
+    border:solid rgb(104, 210, 214) 1px -width;
+}
+
+h1 {
+    color: rgb(104, 211, 214);
+    text-align: center;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+article {
     color: rgb(204, 226, 235);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 5%;
+    margin: 20%;
+    margin-top: 5%;
+    padding: 0%;
 }
+
+
 
 img {
     width: 100%;
     height: 100%;
+    border: solid white;
+    transition:  border-radius 0.5s ease;
 }
+
+img:hover{
+    border-radius: 10%;
+}
+
 iframe {
     width: 100%;
     height: 100%;
+    border: solid white;
+}
+
+footer{
+    color: rgb(204, 226, 235);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 
