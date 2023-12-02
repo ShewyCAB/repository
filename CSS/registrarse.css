@@ -1,16 +1,14 @@
-
 *{
     margin: 0;
 }
 
 html {
-    background-image: url("/repository/multimedia/FdM7TdWXEAAgl9g.jpg");
+    background-image: url(/repository/multimedia/FdM7TdWXEAAgl9g.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
 }
-
 
 
 .navegacion{
@@ -22,7 +20,9 @@ body{
     background-color: rgba(240, 248, 255, 0);
 }
 
+
 nav ul {
+    padding: 0;
     margin: 0;
     display: flex;
     background-color: rgba(22, 85, 90, 0.733);
@@ -34,8 +34,11 @@ nav ul {
     position: fixed;
     width: 100%;
     top: 0;
+}
 
-
+nav li {
+    display: inline-block;
+    position: relative;
 }
 
 nav a {
@@ -50,8 +53,28 @@ nav a {
     transition:  background-color 0.5s ease;
 }
 
+
+
 nav a:hover{
     background-color: rgba(36, 134, 141, 0.596);
+}
+
+
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+
+nav ul li:hover > ul {
+    display:block;
+    background-color: rgba(36, 134, 141, 0.596);
+    color: rgb(104, 211, 214);
+    padding: auto;
+    
 }
 
 nav li {

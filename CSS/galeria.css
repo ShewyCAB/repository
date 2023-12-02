@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+}
+
+html {
+    background-color: rgb(34, 43, 44);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+.navegacion{
+    background-color: rgb(22, 85, 90);
+    
+}
+
+body{
+    background-color: rgba(240, 248, 255, 0);
+}
+
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: rgba(22, 85, 90, 0.733);
+    width: auto;
+    height: auto;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a {
+    display: flex;
+    background-color: rgba(22, 85, 90, 0);
+    padding: 20px;
+    text-align: center;
+    justify-self: center;
+    color: rgb(104, 211, 214);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    transition:  background-color 0.5s ease;
+}
+
+
+
+nav a:hover{
+    background-color: rgba(36, 134, 141, 0.596);
+}
+
+
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+
+nav ul li:hover > ul {
+    display:block;
+    background-color: rgba(36, 134, 141, 0.596);
+    color: rgb(104, 211, 214);
+    padding: auto;
+    
+}
+
+nav li {
+    margin: auto;
+    border:solid rgb(104, 210, 214) 1px -width;
+}
