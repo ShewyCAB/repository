@@ -6,53 +6,57 @@
         <title>Registrarse</title>
         <link rel="stylesheet" href="/repository/CSS/registrarse.css">
     </head>
-    <nav>
-        <ul class="lista">
-            <li>
-                <a href="/repository/index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="./pages/galeria.html">Galeria</a>
-            </li>
-            <li>
-                <a href="./pages/pagina3.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="./pages/pagina4.html">Consultas</a>
-            </li>
-        </ul>
-    </nav>
-    <header>Registrarse</header>
+    <div class="navegacion">
+        <nav>
+            <ul class="lista">
+                <li>
+                    <a href="/repository/index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./pages/galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="./pages/pagina3.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./pages/pagina4.html">Consultas</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="fondo"></div>
     <body>
-    <div class="formulario">
-        <form>
+        <div class="formulario">
             <h1>Formulario de registro</h1>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" />
-            <label for="email">Email</label>
-            <input type="email" name="email" />
-            <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña" />
+            <form>
+                
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" />
+                <label for="email">Email</label>
+                <input type="email" name="email" />
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" />
 
-            <div class="radio">
-                <label>Hombre</label>
-                <input type="radio" name="genero" value="hombre" />
-                <label>Mujer</label>
-                <input type="radio" name="genero" value="mujer" />
-            </div>
+                <div class="radio">
+                    <label>Hombre</label>
+                    <input type="radio" name="genero" value="hombre" />
+                    <label>Mujer</label>
+                    <input type="radio" name="genero" value="mujer" />
+                </div>
 
-            <label>Acepto terminos y condiciones</label>
-            <input type="checkbox" name="acepta" value="1" />
+                <label>Acepto terminos y condiciones</label>
+                <input type="checkbox" name="acepta" value="1" />
 
-            <label>Seleccione usuario</label>
-            <select name="tipo">
-                <option value="Invitado">Invitado</option>
-                <option value="Normal">Normal</option>
-                <option value="VIP">VIP</option>
-                <option value="Premium">VIP Premium</option>
-            </select>
-            <input type="submit" name="registrarse" />
-        </form>
+                <label>Seleccione usuario</label>
+                <select name="tipo">
+                    <option value="Invitado">Invitado</option>
+                    <option value="Normal">Normal</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Premium">VIP Premium</option>
+                </select>
+                <input type="submit" name="registrarse" />
+            </form>
+        </div>
     </div>
         
     </body>
